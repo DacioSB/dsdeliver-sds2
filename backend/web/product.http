@@ -1,6 +1,10 @@
 @url = http://127.0.0.1:8080/products
-
+@url_heroku = https://devsuper.herokuapp.com/products
 //Gets
 GET {{url}} HTTP/1.1
+Accept: application/json
+###
+//HEROKU
+GET {{url_heroku}} HTTP/1.1
 Accept: application/json
 ###

@@ -1,7 +1,11 @@
 @url = http://127.0.0.1:8080/orders
 @id = 7
+@url_heroku = https://devsuper.herokuapp.com/orders
 //Get
 GET {{url}} HTTP/1.1
+Accept: application/json
+###
+GET {{url_heroku}} HTTP/1.1
 Accept: application/json
 ###
 //Posts
