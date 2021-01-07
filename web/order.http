@@ -1,6 +1,28 @@
 @url = http://127.0.0.1:8080/orders
-
+@id = 7
 //Gets
 GET {{url}} HTTP/1.1
 Accept: application/json
 ###
+//Posts
+POST {{url}} HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "address": "Avenida Paulista, 1500",
+    "latitude": -23.56168,
+    "longitude": -46.656139,
+    "products": [
+      {
+        "id": 1
+      },
+      {
+        "id": 4
+      }
+    ]
+}
+###
+//Puts
+PUT {{url}}/{{id}}/delivered HTTP/1.1
+Accept: application/json
