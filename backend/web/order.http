@@ -1,6 +1,6 @@
 @url = http://127.0.0.1:8080/orders
 @id = 7
-//Gets
+//Get
 GET {{url}} HTTP/1.1
 Accept: application/json
 ###
