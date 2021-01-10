@@ -6,6 +6,7 @@
   --dark-color:#2C4966;
   --secondary-color: hsl(0, 0%, 62%);
   --light-color: #F5F5F5;
+  --selected-card-color: #FF803B;
 }
 
 html, body {
